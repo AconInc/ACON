@@ -107,6 +107,73 @@
             color: #2d2d2d;
         }
         
+        .download-section {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .download-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2d2d2d;
+            margin-bottom: 10px;
+        }
+        
+        .download-subtitle {
+            color: #6b6b6b;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        
+        .app-buttons {
+            display: flex;
+            gap: 18px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .app-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #ff4a02, #ff6b35);
+            color: white;
+            text-decoration: none;
+            padding: 14px 24px;
+            border-radius: 12px;
+            font-weight: 500;
+            font-size: 15px;
+            box-shadow: 0 4px 16px rgba(255, 74, 2, 0.3);
+            transition: all 0.3s ease;
+            min-width: 145px;
+        }
+        
+        .app-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(255, 74, 2, 0.4);
+            text-decoration: none;
+            color: white;
+        }
+        
+        .app-button:active {
+            transform: translateY(0);
+        }
+        
+        .app-icon {
+            width: 22px;
+            height: 22px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+        }
+        
         .contact-section {
             background: white;
             border-radius: 16px;
@@ -143,8 +210,16 @@
                 font-size: 20px;
             }
             
-            .content-card {
+            .content-card, .download-section {
                 padding: 30px 20px;
+            }
+            
+            .app-buttons {
+                gap: 15px;
+            }
+            
+            .app-button {
+                min-width: 130px;
             }
         }
     </style>
@@ -180,6 +255,26 @@
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+        
+        <div class="download-section">
+            <h2 class="download-title">지금 Acon 앱을 다운로드하세요</h2>
+            
+            <div class="app-buttons">
+                <a href="https://apps.apple.com/kr/app/acon/id6740120473" 
+                   target="_blank" 
+                   class="app-button">
+                    <div class="app-icon">🍎</div>
+                    <span>App Store</span>
+                </a>
+                
+                <a href="https://play.google.com/store/apps/details?id=com.acon.acon" 
+                   target="_blank" 
+                   class="app-button">
+                    <div class="app-icon">🤖</div>
+                    <span>Google Play</span>
+                </a>
             </div>
         </div>
         
