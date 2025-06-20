@@ -84,6 +84,15 @@
             display: flex;
             align-items: center;
             gap: 15px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        .team-info:hover {
+            background: #f0f0ef;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         
         .team-avatar {
@@ -107,75 +116,41 @@
             color: #2d2d2d;
         }
         
-        .download-section {
-            background: white;
-            border-radius: 16px;
-            padding: 40px;
-            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        .download-title {
-            font-size: 24px;
-            font-weight: 600;
-            color: #2d2d2d;
-            margin-bottom: 10px;
-        }
-        
-        .download-subtitle {
-            color: #6b6b6b;
-            margin-bottom: 30px;
-            font-size: 16px;
-        }
-        
-        .app-buttons {
+        .app-store-row {
             display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
         }
         
-        .app-button {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            background: linear-gradient(135deg, #ff4a02, #ff6b35);
-            color: white;
-            text-decoration: none;
-            padding: 20px;
-            border-radius: 16px;
-            font-weight: 500;
-            font-size: 14px;
-            box-shadow: 0 4px 16px rgba(255, 74, 2, 0.3);
-            transition: all 0.3s ease;
-            width: 120px;
-            height: 120px;
-        }
-        
-        .app-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(255, 74, 2, 0.4);
-            text-decoration: none;
-            color: white;
-        }
-        
-        .app-button:active {
-            transform: translateY(0);
-        }
-        
-        .app-icon {
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.2);
+        .app-store-box {
+            flex: 1;
+            background: #f8f8f7;
             border-radius: 12px;
+            padding: 16px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            margin-bottom: 4px;
+            gap: 12px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            opacity: 0.8;
+        }
+        
+        .app-store-box:hover {
+            background: #f0f0ef;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            opacity: 1;
+        }
+        
+        .app-store-box .team-name {
+            font-weight: 500;
+            font-size: 15px;
+        }
+        
+        .app-store-box .team-avatar {
+            width: 36px;
+            height: 36px;
         }
         
         .contact-section {
@@ -183,7 +158,7 @@
             border-radius: 16px;
             padding: 30px;
             box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            text-align: left;
         }
         
         .contact-text {
@@ -214,17 +189,17 @@
                 font-size: 20px;
             }
             
-            .content-card, .download-section {
+            .content-card {
                 padding: 30px 20px;
             }
             
-            .app-buttons {
-                gap: 20px;
+            .app-store-row {
+                gap: 10px;
             }
             
-            .app-button {
-                width: 120px;
-                height: 120px;
+            .app-store-box {
+                padding: 14px;
+                gap: 10px;
             }
         }
     </style>
@@ -246,52 +221,48 @@
                  Acon.Inc은 모바일 제품을 시작으로 라이프스타일 O2O플랫폼으로 성장하기 위해 달려가고 있습니다.
             </p>
             
-            <div class="team-info">
+            <a href="https://stripe-shoemaker-907.notion.site/Acon-1e0856d5371b81aead8bd8a7b6fa5721?pvs=74" 
+               target="_blank" 
+               class="team-info">
                 <div class="team-avatar">
                     <img src="acon-logo.png" alt="Acon">
                 </div>
                 <div>
                     <div class="team-name">Acon</div>
                     <div style="font-size: 14px; color: #888;">
-                        <a href="https://stripe-shoemaker-907.notion.site/Acon-1e0856d5371b81aead8bd8a7b6fa5721?pvs=74" 
-                           target="_blank" 
-                           style="color: #ff4a02; text-decoration: none;">
-                            서비스 한눈에 보기 👀
-                        </a>
+                        <span style="color: #ff4a02;">서비스 한눈에 보기 👀</span>
                     </div>
                 </div>
-            </div>
+            </a>
             
-            <div class="team-info" style="margin-top: 15px;">
-                <div class="team-avatar" style="background: linear-gradient(135deg, #ff8c42, #ffb366);">
-                    <span style="font-size: 20px;">🍎</span>
-                </div>
-                <div>
-                    <div class="team-name">App Store</div>
-                    <div style="font-size: 14px; color: #888;">
-                        <a href="https://apps.apple.com/kr/app/acon/id6740120473" 
-                           target="_blank" 
-                           style="color: #ff4a02; text-decoration: none;">
+            <div class="app-store-row">
+                <a href="https://apps.apple.com/kr/app/acon/id6740120473" 
+                   target="_blank" 
+                   class="app-store-box">
+                    <div class="team-avatar">
+                        <span style="font-size: 20px;">🍎</span>
+                    </div>
+                    <div>
+                        <div class="team-name">App Store</div>
+                        <div style="font-size: 13px; color: #999;">
                             앱스토어에서 다운받기
-                        </a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            
-            <div class="team-info" style="margin-top: 15px;">
-                <div class="team-avatar" style="background: linear-gradient(135deg, #ff8c42, #ffb366);">
-                    <span style="font-size: 20px;">📱</span>
-                </div>
-                <div>
-                    <div class="team-name">Google Play</div>
-                    <div style="font-size: 14px; color: #888;">
-                        <a href="https://play.google.com/store/apps/details?id=com.acon.acon" 
-                           target="_blank" 
-                           style="color: #ff4a02; text-decoration: none;">
+                </a>
+                
+                <a href="https://play.google.com/store/apps/details?id=com.acon.acon" 
+                   target="_blank" 
+                   class="app-store-box">
+                    <div class="team-avatar">
+                        <span style="font-size: 20px;">📱</span>
+                    </div>
+                    <div>
+                        <div class="team-name">Google Play</div>
+                        <div style="font-size: 13px; color: #999;">
                             플레이스토어에서 다운받기
-                        </a>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
         
