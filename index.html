@@ -1,1 +1,192 @@
-
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, We are Team Acon.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f7f7f5;
+            color: #37352f;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(255, 107, 53, 0.3);
+        }
+        
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #2d2d2d;
+            margin-bottom: 20px;
+        }
+        
+        .subtitle {
+            font-size: 24px;
+            color: #6b6b6b;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+        
+        .content-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            border-left: 4px solid #ff6b35;
+        }
+        
+        .content-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #5a5a5a;
+            margin-bottom: 30px;
+        }
+        
+        .team-info {
+            background: #f8f8f7;
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .team-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .team-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .team-name {
+            font-weight: 600;
+            color: #2d2d2d;
+        }
+        
+        .contact-section {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .contact-text {
+            color: #6b6b6b;
+            margin-bottom: 10px;
+        }
+        
+        .email {
+            color: #ff6b35;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .email:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+            
+            h1 {
+                font-size: 36px;
+            }
+            
+            .subtitle {
+                font-size: 20px;
+            }
+            
+            .content-card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="acon-logo.png" alt="Acon Logo">
+            </div>
+            <h1>Hello, We are Team Acon.</h1>
+            <div class="subtitle">No more research, acon</div>
+        </div>
+        
+        <div class="content-card">
+            <p class="content-text">
+                우리는 더 이상 맞힘을 찾느라 고민할 필요가 없는 자도 없을 만들어 나가고 있습니다. 현재 내 위치를 기반으로 
+                로 다수의 위험이 아닌 개인취향을 반영한 맞힘을 추천해주며, 현지인(로컬) 추천 맞집이 우선적으로 노출됩
+                니다. Team.acon은 모바일 제품을 시작으로 라이프스타일 O2O플랫폼으로 성장하기 위해 달려가고 있습니
+                다.
+            </p>
+            
+            <div class="team-info">
+                <div class="team-avatar">
+                    <img src="acon-logo.png" alt="Acon">
+                </div>
+                <div>
+                    <div class="team-name">Acon</div>
+                    <div style="font-size: 14px; color: #888;">
+                        <a href="https://stripe-shoemaker-907.notion.site/Acon-1e0856d5371b81aead8bd8a7b6fa5721?pvs=74" 
+                           target="_blank" 
+                           style="color: #ff4a02; text-decoration: none;">
+                            acon, 한눈에 보기 👀
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-section">
+            <p class="contact-text">팀/제품에 대해 궁금하신 점이 있다면, 언제든지 <a href="mailto:acon241221@gmail.com" class="email">acon241221@gmail.com</a>으로 이메일을 보내주세요.</p>
+        </div>
+    </div>
+</body>
+</html>
